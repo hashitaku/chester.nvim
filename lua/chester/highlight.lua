@@ -112,7 +112,7 @@ return {
     --WinBarNC = {},
 
     -- plugins
-    debugPC = { guifg = NONE, guibg = c.background_alt },
+    debugPC = { guibg = c.background_alt },
     debugBreakpoint = { guifg = c.red },
 
     FernIndentMarkers = { link = 'Comment' },
