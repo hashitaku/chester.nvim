@@ -112,10 +112,10 @@ return {
     --WinBarNC = {},
 
     -- plugins
-    debugPC = { guifg = NONE, guibg = c.background_alt }
-    debugBreakpoint = { guifg = c.red }
+    debugPC = { guifg = NONE, guibg = c.background_alt },
+    debugBreakpoint = { guifg = c.red },
 
-    FernIndentMarkers = { link = 'Comment' }
+    FernIndentMarkers = { link = 'Comment' },
 
-    TreesitterContext = { guibg = c.select }
+    TreesitterContext = { guibg = c.select },
 }
