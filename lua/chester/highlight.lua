@@ -103,7 +103,7 @@ return {
     --TabLineFill = {},
     --TabLineSel = {},
     --Title = {},
-    Vil = { bg = c.select },
+    Visual = { bg = c.select },
     VisualNOS = { link = 'Visual' },
     --WarningMsg = {},
     --Whitespace = {},
