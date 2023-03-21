@@ -83,7 +83,7 @@ return {
     --MoreMsg = {},
     --NonText = {},
     Normal = { fg = c.foreground, bg = c.background },
-    --NormalFloat = {},
+    NormalFloat = { link = 'Normal' },
     --NormalNC = {},
     Pmenu = { bg = c.background_alt },
     --hi Pmenusel guifg=NONE guibg=NONE gui=NONE
@@ -110,4 +110,12 @@ return {
     --WildMenu = {},
     --WinBar = {},
     --WinBarNC = {},
+
+    -- plugins
+    debugPC = { guifg = NONE, guibg = c.background_alt }
+    debugBreakpoint = { guifg = c.red }
+
+    FernIndentMarkers = { link = 'Comment' }
+
+    TreesitterContext = { guibg = c.select }
 }
