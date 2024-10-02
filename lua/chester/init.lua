@@ -8,7 +8,7 @@ function M.load()
     vim.cmd("highlight clear")
 
     vim.api.nvim_set_option_value("background", "dark", {})
-    vim.api.nvim_set_option_value("termguicolors", "true", {})
+    vim.api.nvim_set_option_value("termguicolors", true, {})
     vim.api.nvim_set_var("colors_name", "chester")
 
     if config.options.terminal_color then
