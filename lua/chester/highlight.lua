@@ -20,7 +20,7 @@ return {
     Repeat      = { link = "Statement" },
     Label       = { link = "Statement" },
     Operator    = { link = "Statement" },
-    Keyword     = { cterm = "italic", gui = "italic", fg = c.cyan },
+    Keyword     = { fg = c.cyan, italic = true },
     Exeption    = { link = "Statement" },
 
     PreProc     = { fg = c.cyan },
