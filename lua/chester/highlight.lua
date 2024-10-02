@@ -34,18 +34,24 @@ return {
     Structure    = { fg = c.red_alt },
     Typedef      = { fg = c.cyan    },
 
-    Special        = { fg = c.red },
-    SpecialChar    = { fg = c.red },
-    Tab            = { fg = c.red },
-    Delimiter      = { fg = c.red },
-    SpecialComment = { fg = c.red },
-    Debug          = { fg = c.red },
+    Special        = { fg = c.foreground },
+    SpecialChar    = { link = "Special" },
+    Tab            = { link = "Special" },
+    Delimiter      = { link = "Special" },
+    SpecialComment = { link = "Special" },
+    -- Debug = {},
 
     Underline = { underline = true },
 
     --Ignore = {},
 
+    -- Error = {},
+
     Todo = { sp = c.yellow, undercurl = true },
+
+    -- Added = {},
+    -- Changed = {},
+    -- Removed = {},
 
     -- highlight-group
     ColorColumn = { bg = c.select },
