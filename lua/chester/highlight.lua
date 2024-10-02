@@ -1,5 +1,6 @@
-local c = require('chester.colors')
+local c = require("chester.colors")
 
+-- stylua: ignore start
 return {
     -- group-name
     Comment = { fg = c.comment },
@@ -15,12 +16,12 @@ return {
     Function   = { fg = c.blue },
 
     Statement   = { fg = c.cyan },
-    Conditional = { fg = c.cyan },
-    Repeat      = { fg = c.cyan },
-    Label       = { fg = c.cyan },
-    Operator    = { fg = c.cyan },
-    Keyword     = { fg = c.cyan },
-    Exeption    = { fg = c.cyan },
+    Conditional = { link = "Statement" },
+    Repeat      = { link = "Statement" },
+    Label       = { link = "Statement" },
+    Operator    = { link = "Statement" },
+    Keyword     = { cterm = "italic", gui = "italic", fg = c.cyan },
+    Exeption    = { link = "Statement" },
 
     PreProc     = { fg = c.cyan },
     Include     = { fg = c.cyan },
@@ -60,7 +61,7 @@ return {
     DiffChange = { bg = c.blend_green },
     DiffDelete = { bg = c.blend_red },
     DiffText = { bg = c.blend_green_alt },
-    EndOfBuffer = { link = 'NonText' },
+    EndOfBuffer = { link = "NonText" },
     --TermCursor = {},
     --TermCursorNC = {},
     ErrorMsg = { fg = c.red },
@@ -68,11 +69,11 @@ return {
     --hi Folded guifg= guibg= gui=
     --hi FoldColumn guifg= guibg= gui=
     SignColumn = { fg = c.foreground },
-    IncSearch = { link = 'Search' },
+    IncSearch = { link = "Search" },
     --Substitute = {},
     LineNr = { fg = c.comment, bold = true },
-    LineNrAbove = { link = 'LineNr' },
-    LineNrBelow = { link = 'LineNr' },
+    LineNrAbove = { link = "LineNr" },
+    LineNrBelow = { link = "LineNr" },
     CursorLineNr = { fg = c.comment_alt, bold = true },
     --CursorLineSign = {},
     --CursorLineFold = {},
@@ -104,10 +105,11 @@ return {
     --TabLineSel = {},
     --Title = {},
     Vil = { bg = c.select },
-    VisualNOS = { link = 'Visual' },
+    VisualNOS = { link = "Visual" },
     --WarningMsg = {},
     --Whitespace = {},
     --WildMenu = {},
     --WinBar = {},
     --WinBarNC = {},
 }
+-- stylua: ignore end

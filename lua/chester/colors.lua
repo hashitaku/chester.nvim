@@ -1,4 +1,5 @@
 local M = {
+    -- stylua: ignore start
     foreground     = "#e0e0e0",
     background     = "#2c3643",
     background_alt = "#3f4d5e",
@@ -33,8 +34,10 @@ local M = {
     blend_magenta_alt = "#756094",
     blend_cyan        = "#5a7993",
     blend_cyan_alt    = "#718293",
+    -- stylua: ignore end
 }
 
+-- stylua: ignore start
 M.term_0 = M.black
 M.term_1 = M.red
 M.term_2 = M.green
@@ -52,5 +55,6 @@ M.term_12 = M.blue_alt
 M.term_13 = M.magenta_alt
 M.term_14 = M.cyan_alt
 M.term_15 = M.white_alt
+-- stylua: ignore end
 
 return M
