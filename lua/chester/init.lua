@@ -1,6 +1,6 @@
 local colors = require("chester.colors")
 local config = require("chester.config")
-local highlight = require("chester.highlight")
+local highlights = require("chester.highlights")
 
 local M = {}
 
@@ -17,8 +17,8 @@ function M.load()
         end
     end
 
-    for group, hl in pairs(highlight) do
-        vim.api.nvim_set_hl(0, group, hl)
+    for group, highlight in pairs(highlights) do
+        vim.api.nvim_set_hl(0, group, highlight)
     end
 end
 
